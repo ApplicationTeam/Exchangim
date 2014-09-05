@@ -1,7 +1,6 @@
 package com.appteam.exchange.service;
 
 import java.io.IOException;
-import java.text.ParseException;
 import java.util.Date;
 
 import org.apache.http.client.ClientProtocolException;
@@ -12,7 +11,9 @@ import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import android.util.Log;
+
 import com.appteam.exchange.model.ExchangeItemModel;
 
 public class ExchangeService {
