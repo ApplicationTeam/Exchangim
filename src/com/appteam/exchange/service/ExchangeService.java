@@ -12,6 +12,8 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.app.IntentService;
+import android.content.Intent;
 import android.util.Log;
 
 import com.appteam.exchange.model.ExchangeItemModel;
@@ -62,6 +64,11 @@ public class ExchangeService {
 			return null;
 		}
 
+	}
+
+
+	protected void onHandleIntent(Intent intent) {
+		download();
 	}	
 	
 }
